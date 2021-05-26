@@ -18,11 +18,9 @@ public class Cipher
     //constructor: Construct an instance having the given key
     public Cipher(String k)
     {
-        //should simply set the key attribute
         this.key = k;
     }
 
-    //methods
     public String encrypt(String note)
     {
         //encrypt given string and return ciphertext

@@ -15,7 +15,7 @@ public class Cipher
         return pad;
     }
 
-    //constructor: Construct an instance having the given key
+    
     public Cipher(String k)
     {
         this.key = k;

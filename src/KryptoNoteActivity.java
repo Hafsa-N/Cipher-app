@@ -24,14 +24,14 @@ public class KryptoNoteActivity extends AppCompatActivity
     {
         try
         {
-            //get the values of the key and the note from the view
+           
             String key = ((EditText) findViewById(R.id.key)).getText().toString();
             String note = ((EditText) findViewById(R.id.data)).getText().toString();
 
-            Cipher c = new Cipher(key); //pass key into instance of the cipher constructor?/class
-            String result = c.encrypt(note);  //with the given key, encrypt the note
+            Cipher c = new Cipher(key);
+            String result = c.encrypt(note);  
 
-            ((EditText) findViewById(R.id.data)).setText(result); //poke result in data textbox
+            ((EditText) findViewById(R.id.data)).setText(result); 
         }
         catch (Exception e)
         {
@@ -50,7 +50,7 @@ public class KryptoNoteActivity extends AppCompatActivity
             Cipher c = new Cipher(key);
             String result = c.decrypt(note);
 
-            ((EditText) findViewById(R.id.data)).setText(result); //poke in data textbox
+            ((EditText) findViewById(R.id.data)).setText(result);
         }
         catch (Exception e)
         {
